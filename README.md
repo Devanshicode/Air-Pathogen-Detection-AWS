@@ -2,9 +2,13 @@
 ### AI-Powered Morphological Analysis | Deployed on AWS Serverless
 
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+&nbsp;&nbsp;
 ![AWS](https://img.shields.io/badge/Cloud-AWS-orange)
+&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
+&nbsp;&nbsp;
 ![ML](https://img.shields.io/badge/ML-CNN%20%7C%20ONNX-purple)
+&nbsp;&nbsp;
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
