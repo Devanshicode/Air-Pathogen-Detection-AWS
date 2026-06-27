@@ -158,7 +158,7 @@ air-pathogen-detection-aws/
 ## 🧠 Key Technical Decisions
 
 **Why ONNX instead of TFLite?**
-TFLite runtime requires GLIBC 2.27+ which is unavailable on Lambda's Linux environment. ONNX Runtime has pre-built manylinux wheels compatible with Lambda.
+TFLite runtime requires GLIBC 2.27+ which is unavailable on Lambda's Linux environment. ONNX Runtime has pre-built many linux wheels compatible with Lambda.
 
 **Why Serverless (Lambda)?**
 No server running 24/7. Lambda runs only when an image is submitted. Zero idle cost. Scales automatically with requests.
