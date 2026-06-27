@@ -35,6 +35,7 @@ This system detects airborne pathogens from microscopy images using a trained Co
 
 ## 🏗️ Architecture
 
+
 User uploads image
         ↓
 S3 Static Website (Frontend)
