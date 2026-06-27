@@ -1,1 +1,111 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathogen Detection System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Socket.IO (optional) -->
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        🧪 <span>Pathogen Detection System</span>
+        <p>AI-Powered Morphological Analysis & Detection</p>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+        <!-- 📸 CAPTURE BOX -->
+        <div class="card upload-card">
+            <div class="icon">📸</div>
+
+            <h3 id="fileName">No image captured</h3>
+            <p id="fileStatus">Click capture → press SPACE in camera</p>
+            
+	    <input type="file" id="imageInput" accept="image/*"
+             style="margin-top:12px; color:#94a3b8; font-size:13px; display:block;">
+
+            <button onclick="captureImage()">
+                 Detect Pathogen
+            </button>
+
+            <!-- 📷 Preview -->
+            <img id="previewImage" src="">
+        </div>
+
+        <!-- 🔬 ANALYSIS BOX -->
+        <div class="card analysis">
+            🔬
+            <p id="resultText">
+                Waiting for capture...
+            </p>
+
+            <!-- ✅ CONFIDENCE -->
+            <p id="confidenceText">
+                Confidence: --
+            </p>
+            <div class="conf-bar">
+                <div class="conf-fill" id="confFill"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <h3>⚡ Stage 2: Antigen-Based Detection</h3>
+        <p class="sub">Simulated immunoassay detection strips showing results</p>
+
+        <!-- 🧬 STRIPS -->
+        <div class="strip" id="bacteria">
+            <span>🦠 Bacteria</span>
+            <div class="bar"><span>C</span><span>T</span></div>
+            <p id="bacteriaText">No detection</p>
+        </div>
+
+        <div class="strip" id="fungi">
+            <span>🍄 Fungi</span>
+            <div class="bar"><span>C</span><span>T</span></div>
+            <p id="fungiText">No detection</p>
+        </div>
+
+        <div class="strip" id="virus">
+            <span>🧬 Virus</span>
+            <div class="bar"><span>C</span><span>T</span></div>
+            <p id="virusText">No detection</p>
+        </div>
+
+        <div class="strip" id="others">
+            <span>⚪ Others</span>
+            <div class="bar"><span>C</span><span>T</span></div>
+            <p id="othersText">No detection</p>
+        </div>
+
+        <!-- 🚀 CONTROL -->
+        <div class="control">
+            <button class="upload-btn" onclick="captureImage()">
+                Start Detection
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
