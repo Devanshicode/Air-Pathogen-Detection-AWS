@@ -90,13 +90,19 @@ JSON Response → UI Updates
 
 ## 📸 Screenshots
 
-### Live Detection Working
+### 🌐 Live Detection Working
 ![Detection Working](screenshots/22_website_detection_working.png)
 
-### AWS Services
+### ☁️ S3 Model Bucket
 ![S3 Bucket](screenshots/02_s3_model_bucket.png)
+
+### ⚡ Lambda Function
 ![Lambda Function](screenshots/07_lambda_function_created.png)
+
+### 🔗 API Gateway
 ![API Gateway](screenshots/12_api_gateway.png)
+
+### 🗄️ DynamoDB Predictions Logged
 ![DynamoDB](screenshots/23_dynamodb_prediction_logged.png)
 
 ---
