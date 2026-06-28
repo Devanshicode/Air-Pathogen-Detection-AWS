@@ -168,6 +168,43 @@ Lambda has 250MB layer limit. Storing model in S3 and downloading to /tmp at run
 
 ---
 
+---
+
+
+## 🎓 What This Project Taught Me
+
+### ☁️ Cloud & AWS
+- How to build a **fully serverless architecture** with zero idle cost
+- How AWS services connect — S3 → Lambda → API Gateway → DynamoDB
+- How IAM roles and least-privilege permissions work in real projects
+- How to debug Lambda errors using **CloudWatch logs**
+- How **Lambda layers** work and why size limits matter
+- How to host a static website on S3 with public bucket policies
+- How **API Gateway CORS** works and why it is needed for browser requests
+
+### 🤖 Machine Learning & Deployment
+- How to convert a Keras model from **.h5 → ONNX format** for deployment
+- Why **TFLite had GLIBC compatibility issues** on Lambda and how I solved it
+- How **ONNX Runtime** works as a Lambda-compatible inference engine
+- How to preprocess images (resize → normalize → numpy array) for CNN inference
+- How to cache ML models in Lambda using global variables to reduce latency
+
+### 🐛 Problem Solving
+- Debugged **GLIBC_2.27 not found** error — learned about Linux library compatibility
+- Fixed **numpy binary incompatibility** between Python 3.11 and 3.13 builds
+- Solved **CORS errors** by properly configuring API Gateway and redeploying
+- Fixed **S3 bucket region mismatch** between CloudShell and bucket location
+- Learned that **file extensions matter** — .html.txt vs .html breaks everything
+
+### 💡 Key Realizations
+- A working deployed project at 75% accuracy beats a perfect model sitting in Colab
+- Serverless is not just cost-saving — it is **event-driven architecture thinking**
+- Every error message is a learning opportunity — CloudWatch logs tell the whole story
+- Cloud deployment has many moving parts — region, permissions, file formats, size limits all matter
+
+---
+
+
 ## 👩‍💻 About
 
 **Devanshi Barbhaya**
